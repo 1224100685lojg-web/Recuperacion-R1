@@ -47,4 +47,11 @@ Ejercicios prácticos que apliquen el uso de **colas (`Queue`)** en diferentes c
 
 ---
 
+## 🚀 Ejercicios hecho en libreta acerca de estos temas
+
+| Ejercicio | Descripción | PDF |
+|----------|-------------|------|
+| Lista | Conceptos y ejercicios de listas simples y doblemente enlazadas | [![Ver pdf](https://img.shields.io/badge/Ver_PDF-007ACC?style=for-the-badge&logo=java&logoColor=white)](./VentanaSwing.pdf) |
+| Pilas y Colas | Conceptos y ejercicios de pilas y colas | [![Ver pdf](https://img.shields.io/badge/Ver_PDF-007ACC?style=for-the-badge&logo=java&logoColor=white)](./Conceptos_de_arboles.pdf) |
+
 👨‍💻 **Autor:** *Luis Owen Jaramillo Guerrero*📅
