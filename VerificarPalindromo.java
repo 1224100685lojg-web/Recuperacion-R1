@@ -9,24 +9,40 @@ import java.util.Stack;
 
 /**
  *
- * @author Owen_04
+ Este codigo permite leer una palabra desde consola,
+ * invertirla utilizando una pila y determinar si es un palíndromo.
+ * 
+ * Un palíndromo es una palabra que se lee igual de izquierda a derecha
+ * que de derecha a izquierda (ignorando mayúsculas/minúsculas).
+ 
+ * @author Luis Owen Jaramillo Guerrero
  */
 public class VerificarPalindromo {
 
     /**
-     * @param args the command line arguments
+     * Método principal del programa. Solicita al usuario una palabra,
+     * la inserta carácter por carácter en una pila y luego la invierte
+     * desapilando su contenido. Posteriormente compara la palabra original
+     * con su versión invertida para determinar si es un palíndromo.
      */
     public static void main(String[] args) {
         // TODO code application logic here
     Scanner sc = new Scanner(System.in); 
     System.out.print("Ingrese palabra: "); 
     String palabra = sc.nextLine(); 
+
+     // Pila que almacenará los caracteres de la palabra
     Stack<Character> pila = new Stack<>(); 
-    
-    for (char c : palabra.toCharArray()) pila.push(c); 
+        
+    // Insertar cada carácter de la palabra en la pila
+    for (char c : palabra.toCharArray()) 
+    pila.push(c); 
+        
+     // Construcción de la palabra invertida
         String invertida = ""; 
     while (!pila.isEmpty()) invertida += pila.pop(); 
-    
+
+    // Verificar si original e invertida son iguales ignorando mayúsculas/minúsculas
     if (palabra.equalsIgnoreCase(invertida)) 
     System.out.println("Es palíndromo"); 
     else 
@@ -35,3 +51,4 @@ public class VerificarPalindromo {
 }
    
     
+
